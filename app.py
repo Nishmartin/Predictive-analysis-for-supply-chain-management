@@ -11,7 +11,7 @@ sys.path.append(str(parent_dir))
 from DecisionTree import best_model  # Assuming your best model is defined as 'best_model' in DecisionTree.py
 
 # Load the dataset
-file_path = r"C:\Users\Merline\Desktop\FYP\FinalYearProject2\cleaned_dataset_updated.csv"
+file_path = r"C:/Users/Merline/Desktop/FYP/FinalYearProject2/cleaned_dataset_updated.csv"
 df = pd.read_csv(file_path)
 
 # Define features and target variable
