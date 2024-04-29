@@ -2,9 +2,10 @@ import pandas as pd
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.metrics import mean_squared_error
+import os
 
 # Load the dataset
-file_path = r"C:\Users\Merline\Desktop\FYP\FinalYearProject2\cleaned_dataset_updated.csv"
+file_path = os.path.join('cleaned_dataset_updated.csv')
 df = pd.read_csv(file_path)
 
 # Define features and target variable
