@@ -2,17 +2,19 @@ import sys
 import pandas as pd
 import streamlit as st
 from pathlib import Path
+import os
 
 # Add the parent directory to the system path
 parent_dir = Path(__file__).resolve().parent.parent
 sys.path.append(str(parent_dir))
 
-# Import the model from the .py file
+# Import the model from the .py files
 from DecisionTree import best_model  # Assuming your best model is defined as 'best_model' in DecisionTree.py
 
 # Load the dataset
-file_path = r"C:/Users/Merline/Desktop/FYP/FinalYearProject2/cleaned_dataset_updated.csv"
+file_path = os.path.join('cleaned_dataset_updated')
 df = pd.read_csv(file_path)
+
 
 # Define features and target variable
 features = ['Sales', 'Order Item Quantity', 'Benefit per order']
