@@ -12,7 +12,7 @@ sys.path.append(str(parent_dir))
 from DecisionTree import best_model  # Assuming your best model is defined as 'best_model' in DecisionTree.py
 
 # Load the dataset
-file_path = os.path.join('cleaned_dataset_updated')
+file_path = os.path.join('cleaned_dataset_updated.csv')
 df = pd.read_csv(file_path)
 
 
